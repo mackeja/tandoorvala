@@ -1,0 +1,174 @@
+@import url("https://fonts.google.com/specimen/Montserrat#standard-styles");
+/* global things */
+* {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+.nav{
+	 background-color: #f2f2f2;
+	 position: absolute;
+	width: 100vw;
+  	height: 10vh;
+ 	 z-index: 1;
+}
+#links {
+  display: inline;
+  position: absolute;
+  right: 25px;
+}
+#links {
+  display: inline-flex;
+  list-style: none;
+}
+
+#links li > a {
+  text-decoration: none;
+  color: #063036;
+  font-size: 1.08rem;
+  margin-right: 15px;
+  border-radius: 5px;
+  transition-duration: 0.3s;
+  padding: 10px 10px; /*we need to now move the logo down vertical padding*/
+  text-align: left;
+}
+.logo{
+	position: absolute;
+	max-width: 25%;
+	left: 25px;
+	}
+.common{
+  display: inline-block;
+  width: 48vw;
+  height: 35vw;
+}
+.left{
+	background-color: #f2f2f2
+}
+.right{
+	background-color: #f2f2f2
+}
+.img{
+	position: absolute;
+	max-width: 45%;
+	top: 180px
+}
+.navbar-logo{
+	position: absolute;
+	max-width: 120%;
+	right: 25px;
+	top: -25px;
+}
+h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-weight: bold!important;
+  color: #063036;
+}
+.heading{
+
+	margin-top: 180px;
+	margin-left: 20px;
+}
+p{
+	font-size: 11pt;
+    color: #111111;
+    margin-right: 70px;
+    margin-left: 20px;
+}
+h6 {
+  font-size: 11pt;
+  font-weight: medium
+  letter-spacing: 2px;
+  color: #063036;
+}
+/* GLOBAL BUTTON STYLE */
+button {
+  padding: 10px 16px;
+
+  border-radius: 400px;
+  border: 1px solid;
+  border-color: #063036;
+  cursor: pointer;
+  font-size: 12pt;
+  background-color: transparent;
+  transition-duration: 0.3s;
+  margin-left: 20px;
+  margin-top: -100px;
+}
+input[type="submit"] {
+  border-radius: 20px;
+  margin-top: 3%;
+  height: 100px;
+  background-color: #063036;
+  color: white;
+  font-size: 32px;
+  width: 420px;
+  font-weight: 500;
+  margin-bottom: 3%;
+}
+button:hover {
+  background-color: #063036;
+  color: #ffffff;
+}
+
+button:active {
+  background-color: #063036;
+}
+
+/*button end*/
+a{
+	color: #111111
+}
+.footer{
+	 margin-left: 57%;
+	 margin-top: 4%;
+	 transform: translateX(-50%);
+	}
+
+@media only screen and (max-width: 1000px) {
+  .common {
+    display: block;
+    width: 100vw;
+    height: 50vh;
+  }
+  .logo{position: absolute;
+	max-width: 70%;
+	left: 15px;
+	top: 4px;
+
+  }
+  .navbar-logo{
+	position: absolute;
+	max-width: 100%;
+	right: -25px;
+	top: -30px;
+}
+  .right{
+  	height: 65vh!important;
+  }
+  .img{
+	position: absolute;
+	max-width: 90%;
+	top: 150px;
+}
+
+.heading{
+
+	margin-top: 20px;
+	margin-left: 20px;
+}
+button{margin-bottom: 20px;
+
+}
+.footer{
+	margin-left: 37%;
+	margin-top: 20%;
+}
+}
+
